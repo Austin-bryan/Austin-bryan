@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8">
+<title>Redirecting…</title>
+<script>
+  const routes = {
+    "/github": "https://github.com/Austin-bryan",
+    "/sudoku": "https://github.com/Austin-bryan/AB_Sudoku",
+    "/logic":  "https://github.com/Austin-bryan/AB_Logic",
+    "/err-schema": "https://github.com/Austin-bryan/AB_ErrSchema"
+  };
+  const path = location.pathname.replace(/\/+$/,'').toLowerCase();
+  if (routes[path]) location.replace(routes[path]);
+  else document.write("Not found");
+</script>
