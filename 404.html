@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8">
+<title>Redirecting…</title>
+<script>
+  const routes = {
+    "/github": "https://github.com/Austin-bryan",
+    "/sudoku": "https://github.com/Austin-bryan/Sudoku",
+    "/logic":  "https://github.com/Austin-bryan/LogicLab",
+    "/err": "https://github.com/Austin-bryan/ErrorCorrectionSchema",
+    "/yeschef": "https://github.com/Austin-bryan/YesChef",
+    "/arm": "https://github.com/Austin-bryan/RoboticArm"
+  };
+  const path = location.pathname.replace(/\/+$/,'').toLowerCase();
+  if (routes[path]) location.replace(routes[path]);
+  else document.write("Not found");
+</script>
